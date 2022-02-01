@@ -34,7 +34,10 @@ for img in images:
 font = PIL.ImageFont.truetype(font = 'readonly/fanwood-webfont.ttf', size = 50)
 
 #list of texts
-texts = ['channel 0 intensity 0.1', 'channel 0 intensity 0.5', 'channel 0 intensity 0.9', 'channel 1 intensity 0.1', 'channel 1 intensity 0.5','channel 1 intensity 0.9','channel 2 intensity 0.1','channel 2 intensity 0.5','channel 2 intensity 0.9']
+texts = []
+for ch in range(0, 3):
+    for inten in [0.1, 0.5, 0.9]:
+        texts.append('channel {} intensity {}'.format(ch, inten))
 
 x = 15
 y = 3 + first_image.height
