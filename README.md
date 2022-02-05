@@ -1,4 +1,4 @@
 # Color-changing-in-an-image
 ## Assignment from Coursera
 Пример использования:
-![Example](/Images/Output Image.png)
+![Example](/Images/Output image.png)
